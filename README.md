@@ -46,8 +46,7 @@ The dataset consist of the four sheets for different months and abbreviation ref
 **HML** - Half Day ML  
 
 
-All date and leave columns were transposed and combined(unpivoted) to a single column named `date`, and the `value` column comprising of entries based on attendance (P, SL, WFH, ML, etc.). Afterwards, the leave rows were removed.  
-
+All date and leave columns were transposed and combined(unpivoted) to a single column named `date`, and the `value` column comprising of entries based on attendance (P, SL, WFH, ML, etc.). Afterwards, the leave rows were removed.
 
 
 * Calculated entries:  
