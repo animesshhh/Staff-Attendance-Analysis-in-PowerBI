@@ -6,7 +6,7 @@ This repository utilizing Power BI, analyzes staff attendance data, uncovering i
 The dataset consist of the four sheets for different months and abbreviation reference:  
 * **Apr 2022**   
 * **May 2022**
-* **June 2022**     
+* **June 2022**        
 
 * Columns in these sheets are:   
   * Employee Code 
