@@ -9,7 +9,7 @@ The dataset consist of the four sheets for different months and abbreviation ref
 * **June 2022**     
 
 * Columns in these sheets are:   
-  * Employee Code
+  * Employee Code 
   * Name 
   * Corresponding date columns for each month(`1-Apr` to `30-Apr`)
   * Total Present Days
@@ -48,7 +48,6 @@ The dataset consist of the four sheets for different months and abbreviation ref
 
 All date and leave columns were transposed and combined(unpivoted) to a single column named `date`, and the `value` column comprising of entries based on attendance (P, SL, WFH, ML, etc.). Afterwards, the leave rows were removed.
 
-
 * Calculated entries:  
   * `Total Working Days =   Var totalDays = COUNT('Final Data'[Value])   Var nonWorkDays = CALCULATE(COUNT('Final Data'[Value]), 'Final Data'[Value] IN {"WO", "HO"})   RETURN totalDays - nonWorkDays`
   * `WFH Count = SWITCH(TRUE(), 'Final Data'[Value] = "WFH", 1, 'Final Data'[Value] = "HWFH", 0.5, 0)`  
@@ -61,8 +60,6 @@ All date and leave columns were transposed and combined(unpivoted) to a single c
   * `Presence % = DIVIDE([Present Days], [Total Working Days], 0)`
   * `Month = STARTOFMONTH('Final Data'[Date])`
   * `Day of Week = FORMAT('Final Data'[Date], "ddd")`    
-
-
 
 
 
